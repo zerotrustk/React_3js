@@ -16,6 +16,19 @@ export default App*/
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sparkles } from "@react-three/drei";
 import { useRef } from "react";
+import Navbar from "./components/Navbar";
+
+export function Apps() {
+  return (
+    <div>
+      <Navbar />
+      <main className="p-6">
+        <h1 className="text-3xl font-bold">Welcome to My Website</h1>
+      </main>
+    </div>
+  );
+}
+
 
 const RotatingCube = () => {
   const meshRef = useRef();
@@ -27,9 +40,9 @@ const RotatingCube = () => {
     }
   });
   return (
-    <mesh ref={meshRef}>  
+    <mesh ref={meshRef}>
       <cylinderGeometry args={[1, 1, 1]} />
-      <meshLambertMaterial color="#468585" emissive={"#468585"}/>
+      <meshLambertMaterial color="#468585" emissive={"#468585"} />
       <Sparkles count={100} size={5} speed={0.002} noise={0.2} color="orange" />
     </mesh>
   );
