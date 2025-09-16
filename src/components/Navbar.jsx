@@ -20,7 +20,7 @@
   );
 }
 */
-/*
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -30,20 +30,20 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 shadow-lg">
       <div className="flex justify-between items-center">
-        {/* Logo Image *}
+        {/* Logo Image */}
         <div className="flex items-center space-x-2">
           <img src="/3D.png" alt="Logo" className="h-10 w-auto" />
           <span className="text-xl font-bold tracking-wide">React in 3js</span>
         </div>
 
-        {/* Desktop Links *}
+        {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6">
           <li><a href="#" className="hover:text-blue-400">Home</a></li>
           <li><a href="#" className="hover:text-blue-400">About</a></li>
           <li><a href="#" className="hover:text-blue-400">Contact</a></li>
         </ul>
 
-        {/* Mobile Menu Button *}
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +52,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Links *}
+      {/* Mobile Links */}
       {isOpen && (
         <ul className="flex flex-col space-y-4 mt-4 md:hidden">
           <li><a href="#" className="hover:text-blue-400">Home</a></li>
@@ -63,8 +63,8 @@ export default function Navbar() {
     </nav>
   );
 }
-*/
 
+/*
 export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white px-6 py-4">
@@ -72,3 +72,4 @@ export default function Navbar() {
     </nav>
   );
 }
+  */
